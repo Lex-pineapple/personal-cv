@@ -1,4 +1,4 @@
-import { ProjectsItem } from '@components/projectsItem';
+import { ProjectsItem } from '@components/minor/projectsItem';
 
 export function Projects() {
   return (

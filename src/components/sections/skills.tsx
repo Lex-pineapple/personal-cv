@@ -1,4 +1,4 @@
-import { SkillsCard } from '@components/skillsCard';
+import { SkillsCard } from '@components/minor/skillsCard';
 
 export function Skills() {
   return (

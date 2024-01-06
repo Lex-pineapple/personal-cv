@@ -1,4 +1,4 @@
-import { NavItem } from '@components/navItem';
+import { NavItem } from '@components/minor/navItem';
 
 export function Header() {
   return (

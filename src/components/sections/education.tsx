@@ -1,4 +1,4 @@
-import { EducationItem } from '@components/educationItem';
+import { EducationItem } from '@components/minor/educationItem';
 
 export function Education() {
   return (
