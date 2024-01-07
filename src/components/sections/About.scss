@@ -1,5 +1,56 @@
+@use '@styles/variables' as v;
+
 .about {
+  position: relative;
+  display: grid;
+  grid-template:
+    '. h2' 1fr
+    '. text' 4fr/ 2fr 2fr;
+  align-items: center;
+  column-gap: 100px;
+
   &__img {
+    border-radius: 30px;
+    mask-image: -webkit-gradient(
+      linear,
+      left right,
+      left right,
+      from(rgb(0 0 0 / 100%)),
+      to(rgb(0 0 0 / 0%))
+    );
+    mask-image: linear-gradient(to right, rgb(0 0 0 / 100%), rgb(0 0 0 / 0%));
+    position: absolute;
+    grid-area: img;
     height: 1000px;
+  }
+
+  &__h2 {
+    justify-self: left;
+    margin: 0;
+    grid-area: h2;
+  }
+
+  &__text-line {
+    margin-left: 70px;
+    position: relative;
+  }
+
+  &__text {
+    margin: 70px 0;
+  }
+
+  & .dec_item {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: v.$about-color;
+  }
+
+  &__text-container {
+    align-self: flex-start;
+    grid-area: text;
   }
 }
