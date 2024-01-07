@@ -3,7 +3,7 @@ import { IIconProps } from '@/types';
 export function LinkedinIcon(props: IIconProps) {
   return (
     <svg
-      className={`${props.sectionName || 'noSec'}__icon icon icon-github`}
+      className={`${props.sectionName || 'noSec'}__icon icon icon-linkedin`}
       enableBackground="new 0 0 56.693 56.693"
       height="56.693px"
       id="Layer_1"
