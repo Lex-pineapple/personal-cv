@@ -8,7 +8,12 @@ export function Skills() {
         <div className="item_selectable active">Hard Skills</div>
         <div className="item_selectable">Soft Skills</div>
       </div>
-      <SkillsCard />
+      <div className="skills__cards">
+        <SkillsCard />
+        <SkillsCard />
+        <SkillsCard />
+        <SkillsCard />
+      </div>
     </div>
   );
 }
