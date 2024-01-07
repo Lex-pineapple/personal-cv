@@ -6,9 +6,9 @@
 
   &__list {
     display: flex;
-    gap: 30px;
-    width: fit-content;
     margin: 30px auto;
+    width: fit-content;
+    gap: 30px;
 
     &.moved {
       position: absolute;

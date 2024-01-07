@@ -21,8 +21,8 @@
         '. . . .' 4fr / 3fr 1fr 1fr 1fr;
 
       & img {
-        mask-image: linear-gradient(to right, rgb(0 0 0 / 100%), rgb(0 0 0 / 0%));
         left: 0;
+        mask-image: linear-gradient(to right, rgb(0 0 0 / 100%), rgb(0 0 0 / 0%));
       }
     }
   }

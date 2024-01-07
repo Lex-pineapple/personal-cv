@@ -3,14 +3,16 @@
 .about {
   position: relative;
   display: grid;
+  align-items: center;
   grid-template:
     '. h2' 1fr
     '. text' 4fr/ 2fr 2fr;
-  align-items: center;
   column-gap: 100px;
 
   &__img {
+    position: absolute;
     border-radius: 30px;
+    height: 1000px;
     mask-image: -webkit-gradient(
       linear,
       left right,
@@ -19,20 +21,18 @@
       to(rgb(0 0 0 / 0%))
     );
     mask-image: linear-gradient(to right, rgb(0 0 0 / 100%), rgb(0 0 0 / 0%));
-    position: absolute;
     grid-area: img;
-    height: 1000px;
   }
 
   &__h2 {
-    justify-self: left;
     margin: 0;
+    justify-self: left;
     grid-area: h2;
   }
 
   &__text-line {
-    margin-left: 70px;
     position: relative;
+    margin-left: 70px;
   }
 
   &__text {
@@ -43,10 +43,10 @@
     position: absolute;
     top: -30px;
     left: -30px;
-    width: 100px;
-    height: 20px;
     border-radius: 20px;
     background-color: v.$about-color;
+    height: 20px;
+    width: 100px;
   }
 
   &__text-container {

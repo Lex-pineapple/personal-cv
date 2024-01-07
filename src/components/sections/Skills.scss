@@ -31,10 +31,10 @@
     }
 
     &__meter_circle {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
       border: 3px solid v.$skills-color;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
 
       &.filled {
         background-color: v.$skills-color;
@@ -55,15 +55,15 @@
 
     &__item {
       position: relative;
+      margin-left: 20px;
       list-style-type: none;
       font-size: 48px;
       text-align: left;
-      margin-left: 20px;
 
       &::before {
         position: absolute;
-        left: -30px;
         top: 0.75em;
+        left: -30px;
         content: '';
         display: block;
         border-radius: 50%;

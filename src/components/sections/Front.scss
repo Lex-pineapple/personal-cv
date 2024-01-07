@@ -1,8 +1,6 @@
 @use '@styles/variables' as v;
 
 .front {
-  margin-bottom: 300px;
-  padding: 0 0 0 200px;
   display: grid;
   grid-template:
     'img h1 h1'
@@ -13,6 +11,8 @@
     '.  github linkedin';
   grid-template-columns: 600px 1fr 3fr;
   grid-template-rows: auto;
+  margin-bottom: 300px;
+  padding: 0 0 0 200px;
   column-gap: 20px;
 
   &__img {
@@ -26,6 +26,7 @@
       grid-area: img;
 
       &::after {
+        z-index: -1;
         position: absolute;
         top: 20px;
         left: 20px;
@@ -35,7 +36,6 @@
         background-color: v.$front-color;
         height: 400px;
         width: 400px;
-        z-index: -1;
       }
     }
   }
@@ -80,8 +80,8 @@
 
   &__button {
     background-color: v.$front-color;
-    width: fit-content;
     height: fit-content;
+    width: fit-content;
     font-size: 30px;
     grid-area: button;
 
@@ -97,9 +97,9 @@
   }
 
   &__icon {
-    place-self: center center;
-    color: v.$front-color;
     margin: 100px 0;
+    color: v.$front-color;
+    place-self: center center;
 
     &.icon-github {
       justify-self: right;
