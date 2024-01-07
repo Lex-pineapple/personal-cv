@@ -1,0 +1,11 @@
+.contact {
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__text {
+    font-size: 48px;
+  }
+}

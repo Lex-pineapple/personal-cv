@@ -1,0 +1,18 @@
+@use '@styles/variables' as v;
+
+.projects {
+  &__text {
+    font-size: 32px;
+  }
+
+  &__button {
+    background-color: v.$prj-color;
+    padding: 15px 70px;
+    font-size: 36px;
+    color: v.$white;
+  }
+
+  &__img {
+    height: 1000px;
+  }
+}

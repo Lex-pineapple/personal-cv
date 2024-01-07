@@ -5,5 +5,6 @@ import { Education } from '@components/sections/education';
 import { Projects } from '@components/sections/projects';
 import { Contact } from '@components/sections/contact';
 import { Footer } from '@components/sections/footer';
+import { Skills } from '@components/sections/skills';
 
-export { Header, Front, About, Education, Projects, Contact, Footer };
+export { Header, Front, About, Education, Projects, Skills, Contact, Footer };

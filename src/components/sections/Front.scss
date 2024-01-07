@@ -1,0 +1,43 @@
+@use '@styles/variables' as v;
+
+.front {
+  &__img {
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+  }
+
+  &__h1,
+  &__strong {
+    font-family: Inter, sans-serif;
+    font-size: 96px;
+  }
+
+  &__h1 {
+    font-weight: 700;
+  }
+
+  &__strong {
+    font-weight: 900;
+  }
+
+  &__subtext {
+    font-size: 48px;
+    font-weight: 500;
+    color: v.$light-gray;
+  }
+
+  &__button {
+    background-color: v.$front-color;
+  }
+
+  &__icon {
+    color: v.$front-color;
+  }
+}
+
+.strong {
+  &_color_blue {
+    color: v.$front-color;
+  }
+}

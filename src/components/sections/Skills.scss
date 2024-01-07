@@ -1,0 +1,31 @@
+@use '@styles/variables' as v;
+
+.skills {
+  &__type-selector {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__card {
+    border: 1px solid v.$dk-gray;
+    border-radius: 30px;
+    background-color: v.$dker-gray;
+    width: 720px;
+  }
+
+  & .card {
+    &__name {
+      font-size: 96px;
+      font-weight: 900;
+    }
+
+    &__list {
+      border-top: 1px solid v.$dk-gray;
+      padding: 60px;
+    }
+
+    &__item {
+      font-size: 48px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@use '@styles/variables' as v;
+
+.header {
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__delim {
+    display: block;
+    border-radius: 20px;
+    background-color: v.$white;
+    height: 50px;
+    width: 7px;
+  }
+
+  &__link {
+    font-weight: 900;
+    color: v.$white;
+  }
+
+  &__item {
+    list-style-type: none;
+  }
+}

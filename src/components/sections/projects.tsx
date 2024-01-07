@@ -1,4 +1,5 @@
 import { ProjectsItem } from '@components/minor/projectsItem';
+import './Projects.scss';
 
 export function Projects() {
   return (

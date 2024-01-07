@@ -1,4 +1,5 @@
 import { EducationItem } from '@components/minor/educationItem';
+import './Education.scss';
 
 export function Education() {
   return (

@@ -1,15 +1,15 @@
-import Placeholder from '@assets/Placeholder.png';
 import './App.scss';
-import { About, Contact, Education, Footer, Front, Header, Projects } from '@components';
+import { About, Contact, Education, Footer, Front, Header, Projects, Skills } from '@components';
 
 function App() {
   return (
     <div className="wrapper">
       <Header />
-      <Front temp={Placeholder} />
-      <About temp={Placeholder} />
+      <Front />
+      <About />
       <Education />
       <Projects />
+      <Skills />
       <Contact />
       <Footer />
     </div>
