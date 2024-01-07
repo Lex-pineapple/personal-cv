@@ -5,7 +5,7 @@ export function ProjectsItem() {
   return (
     <div className="projects__item">
       <h3 className="projects__h3 h3">Name</h3>
-      <p className="projects__text text">
+      <p className="projects__text text text_descr">
         Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
         dolore magna aliqua. Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua.
