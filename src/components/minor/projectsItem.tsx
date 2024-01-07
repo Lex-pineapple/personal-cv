@@ -3,7 +3,7 @@ import Placeholder from '@assets/Placeholder.png';
 
 export function ProjectsItem() {
   return (
-    <div className="projects__item">
+    <div className="projects__item align-right">
       <h3 className="projects__h3 h3">Name</h3>
       <p className="projects__text text text_descr">
         Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
