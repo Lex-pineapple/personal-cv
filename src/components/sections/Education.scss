@@ -1,20 +1,29 @@
 @use '@styles/variables' as v;
 
 .edu {
+  &__list {
+    margin-left: 100px;
+  }
+
   &__text.text {
+    margin: 0;
+
     &_date {
       font-size: 40px;
       font-weight: 700;
+      grid-area: date;
     }
 
     &_name {
       font-size: 48px;
       font-weight: 700;
+      grid-area: name;
     }
 
     &_subtext {
       opacity: 0.5;
       font-size: 38px;
+      grid-area: subtext;
     }
   }
 
@@ -22,5 +31,43 @@
     background-color: v.$edu-color;
     font-weight: 500;
     color: v.$white;
+    grid-area: button;
+  }
+
+  &__item {
+    display: grid;
+    align-items: center;
+    grid-template:
+      'date circle name' auto
+      '. line subtext' auto
+      '. line button' auto
+      '. line .' auto/ auto;
+    height: fit-content;
+    width: fit-content;
+    column-gap: 30px;
+  }
+
+  &__symbol {
+    display: block;
+    justify-self: center;
+
+    &.symbol_circle {
+      border: 8px solid v.$dk-gray;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      grid-area: circle;
+    }
+
+    &.symbol_line {
+      background: linear-gradient(0deg, transparent 0, v.$prj-color 50%, transparent 100%);
+      height: 270px;
+      width: 6px;
+      grid-area: line;
+    }
+
+    &.active {
+      border-color: v.$edu-color;
+    }
   }
 }
