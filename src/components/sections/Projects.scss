@@ -78,3 +78,50 @@
     mask-image: linear-gradient(to left, rgb(0 0 0 / 100%), rgb(0 0 0 / 0%));
   }
 }
+
+.projects_modal {
+  position: relative;
+  display: grid;
+  grid-template:
+    'h3 h3' 1fr
+    'descr-cont .' 1fr
+    'descr-cont .' 4fr
+    'read-more button' 0.5fr / 2fr 3fr;
+  height: 990px;
+  width: 1450px;
+
+  & .h3 {
+    font-size: 86px;
+    justify-self: center;
+  }
+
+  & .projects__descr_container {
+    margin-left: 100px;
+    width: 590px;
+    overflow: hidden;
+
+    // overflow-y: scroll;
+    padding-right: 30px;
+    grid-area: descr-cont;
+  }
+
+  & .img-background {
+    z-index: -1;
+    top: 0;
+  }
+
+  & .button,
+  & .text_read-more {
+    align-self: center;
+  }
+
+  & .button {
+    margin-right: 90px;
+    justify-self: flex-end;
+  }
+
+  & .text_read-more {
+    margin: 50px 0 50px 90px;
+    place-self: flex-end flex-start;
+  }
+}
