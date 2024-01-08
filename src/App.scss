@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.wrapper {
+  position: relative;
+}
+
 .text {
   text-align: left;
 }
@@ -17,11 +21,30 @@
   font-family: Roboto, sans-serif;
   font-size: 36px;
   font-weight: 500;
+
+  &_top {
+    position: sticky;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    background-color: v.$front-color;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    border-radius: 50%;
+  }
 }
 
 .icon {
   height: 58px;
   width: 58px;
+
+  &_arrowUp {
+    height: 30px;
+    width: 30px;
+  }
 }
 
 .h2 {

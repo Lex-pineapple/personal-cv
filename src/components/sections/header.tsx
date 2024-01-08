@@ -1,5 +1,6 @@
 import { NavItem } from '@components/minor/navItem';
 import './Header.scss';
+import { LangSwitch } from '@components/minor/langSwitch';
 
 export function Header() {
   return (
@@ -17,6 +18,7 @@ export function Header() {
           <NavItem innerText="Contacts" />
         </ul>
       </nav>
+      <LangSwitch />
     </header>
   );
 }

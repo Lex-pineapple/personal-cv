@@ -2,11 +2,15 @@
 
 .header {
   position: relative;
+  padding: 30px 20px;
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &__list {
     display: flex;
-    margin: 30px auto;
+    margin: 30px 0;
     width: fit-content;
     gap: 30px;
 
@@ -14,6 +18,11 @@
       position: absolute;
       right: 100px;
     }
+  }
+
+  &__lang-switch {
+    position: absolute;
+    right: 30px;
   }
 
   &__delim {
@@ -31,5 +40,44 @@
 
   &__item {
     list-style-type: none;
+  }
+}
+
+.lang-switch {
+  width: 200px;
+  height: 70px;
+
+  &__item {
+    margin: 0;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: v.$dker-gray;
+    color: v.$dk-gray;
+
+    &_en {
+      z-index: 2;
+    }
+
+    &_ru {
+      z-index: 1;
+      left: 30px;
+    }
+
+    &_dk {
+      z-index: 0;
+      left: 60px;
+    }
+
+    &.active {
+      color: v.$white;
+      background-color: v.$front-color;
+    }
   }
 }

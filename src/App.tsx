@@ -1,3 +1,4 @@
+import { ButtonTop } from '@components/minor/buttonTop';
 import './App.scss';
 import { About, Contact, Education, Footer, Front, Header, Projects, Skills } from '@components';
 
@@ -12,6 +13,7 @@ function App() {
       <Skills />
       <Contact />
       <Footer />
+      <ButtonTop />
     </div>
   );
 }
