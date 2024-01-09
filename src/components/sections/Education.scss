@@ -2,27 +2,27 @@
 
 .edu {
   &__list {
-    margin-left: 100px;
+    margin-left: 2.7rem;
   }
 
   &__text.text {
     margin: 0;
 
     &_date {
-      font-size: 40px;
+      font-size: 1.1rem;
       font-weight: 700;
       grid-area: date;
     }
 
     &_name {
-      font-size: 48px;
+      font-size: 1.3rem;
       font-weight: 700;
       grid-area: name;
     }
 
     &_subtext {
       opacity: 0.5;
-      font-size: 38px;
+      font-size: 1rem;
       grid-area: subtext;
     }
   }
@@ -44,7 +44,7 @@
       '. line .' auto/ auto;
     height: fit-content;
     width: fit-content;
-    column-gap: 30px;
+    column-gap: 0.8rem;
   }
 
   &__symbol {
@@ -54,15 +54,15 @@
     &.symbol_circle {
       border: 8px solid v.$dk-gray;
       border-radius: 50%;
-      height: 50px;
-      width: 50px;
+      height: 1.4rem;
+      width: 1.4rem;
       grid-area: circle;
     }
 
     &.symbol_line {
       background: linear-gradient(0deg, transparent 0, v.$prj-color 50%, transparent 100%);
-      height: 270px;
-      width: 6px;
+      height: 7.5rem;
+      width: 0.15rem;
       grid-area: line;
     }
 

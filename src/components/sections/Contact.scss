@@ -2,22 +2,22 @@
 
 .contact {
   &__list {
-    margin: 0 100px;
+    margin: 0 2.7rem;
   }
 
   &__item {
     display: flex;
     align-items: center;
     cursor: pointer;
-    gap: 30px;
+    gap: 0.8rem;
   }
 
   &__text {
-    font-size: 48px;
+    font-size: 1.3rem;
   }
 
   & .icon-email {
-    filter: drop-shadow(0 0 20px v.$green);
+    filter: drop-shadow(0 0 0.5rem v.$green);
     color: v.$green;
   }
 }

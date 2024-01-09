@@ -2,35 +2,35 @@
 
 .header {
   position: relative;
-  padding: 30px 20px;
-  height: 100px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 2.7rem;
+  padding: 0.8rem 0.5rem;
 
   &__list {
     display: flex;
-    margin: 30px 0;
+    margin: 0.8rem 0;
     width: fit-content;
-    gap: 30px;
+    gap: 0.8rem;
 
     &.moved {
       position: absolute;
-      right: 100px;
+      right: 2.7rem;
     }
   }
 
   &__lang-switch {
     position: absolute;
-    right: 30px;
+    right: 0.8rem;
   }
 
   &__delim {
     display: block;
-    border-radius: 20px;
+    border-radius: 0.5rem;
     background-color: v.$white;
-    height: 50px;
-    width: 7px;
+    height: 1.4rem;
+    width: 0.2rem;
   }
 
   &__link {
@@ -44,21 +44,21 @@
 }
 
 .lang-switch {
-  width: 200px;
-  height: 70px;
+  height: 2rem;
+  width: 5.5rem;
 
   &__item {
-    margin: 0;
     position: absolute;
-    font-size: 30px;
-    font-weight: 600;
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 70px;
+    align-items: center;
     border-radius: 50%;
+    margin: 0;
     background-color: v.$dker-gray;
+    height: 2rem;
+    width: 2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
     color: v.$dk-gray;
 
     &_en {
@@ -67,17 +67,17 @@
 
     &_ru {
       z-index: 1;
-      left: 30px;
+      left: 0.8rem;
     }
 
     &_dk {
       z-index: 0;
-      left: 60px;
+      left: 1.5rem;
     }
 
     &.active {
-      color: v.$white;
       background-color: v.$front-color;
+      color: v.$white;
     }
   }
 }
