@@ -85,3 +85,54 @@
     }
   }
 }
+
+.header.compact {
+  align-items: flex-start;
+
+  &.active {
+    height: 500px;
+  }
+
+  nav {
+    &.hidden {
+      // display: none;
+      position: relative;
+      top: -500px;
+    }
+
+    &.compact {
+      & .list {
+        flex-direction: column;
+        padding: 0;
+      }
+
+      & .header__delim {
+        display: none;
+      }
+    }
+  }
+
+  & .lang-switch {
+    top: 0.8rem;
+  }
+}
+
+@media only screen and (width <=550px) {
+  .header.compact.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+
+    & .nav {
+      order: 2;
+    }
+
+    & .lang-switch {
+      width: 2.5rem;
+      order: 1;
+      position: relative;
+    }
+  }
+}

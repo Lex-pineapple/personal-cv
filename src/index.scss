@@ -12,7 +12,8 @@
   font-synthesis: none;
   text-rendering: optimizelegibility;
   text-size-adjust: 100%;
-  overflow-x: hidden;
+
+  // overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -23,7 +24,8 @@ body {
   min-height: 100vh;
   min-width: 320px;
   place-items: center;
-  overflow-x: hidden;
+
+  // overflow-x: hidden;
 }
 
 @media only screen and (width <= 1920px) {

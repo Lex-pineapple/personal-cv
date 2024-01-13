@@ -23,8 +23,9 @@
   font-weight: 500;
 
   &_top {
-    position: sticky;
+    position: fixed;
     bottom: 0.5rem;
+    right: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +59,7 @@ h3 {
   align-items: center;
   border-radius: 0.8rem;
   background-color: v.$white;
-  width: fit-content;
+  width: max-content;
   padding: 0.5rem;
   gap: 0.27rem;
 

@@ -2,7 +2,8 @@
 
 .edu {
   display: flex;
-  height: 100vh;
+  min-height: 1000px;
+  height: fit-content;
   align-items: center;
 
   &_container {
@@ -76,6 +77,17 @@
 
     &.active {
       border-color: v.$edu-color;
+    }
+  }
+}
+
+@media only screen and (width <= 500px) {
+  .edu {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
     }
   }
 }

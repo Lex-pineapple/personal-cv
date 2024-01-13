@@ -4,3 +4,16 @@
   align-items: center;
   padding: 1.4rem;
 }
+
+@media only screen and (width <= 670px) {
+  .footer {
+    &__text,
+    &__git-link_text {
+      font-size: 0.6rem;
+    }
+
+    &__git-link {
+      padding: 0.3rem;
+    }
+  }
+}

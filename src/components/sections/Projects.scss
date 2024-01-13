@@ -12,6 +12,7 @@
       '. . . .' 4fr / 1fr 1fr 1fr 3fr;
     height: 27.7rem;
     padding-top: 1.4rem;
+    margin: 0 2rem;
 
     &.align-right {
       grid-template:
@@ -68,6 +69,7 @@
     right: 0;
     border-radius: 0.8rem;
     height: 27.7rem;
+    grid-area: img;
     mask-image: -webkit-gradient(
       linear,
       left right,
@@ -123,5 +125,88 @@
   & .text_read-more {
     margin: 1.4rem 0 1.4rem 2.5rem;
     place-self: flex-end flex-start;
+  }
+}
+
+@media only screen and (width <= 1300px) {
+  .projects {
+    &_container {
+      padding: 0 2rem;
+    }
+
+    &__img {
+      top: 0;
+      height: 20rem;
+    }
+  }
+}
+
+@media only screen and (width <= 1000px) {
+  .projects {
+    &__item,
+    &__item.align-right {
+      grid-template:
+        'h3 h3 git-link' auto
+        'descr descr descr' auto
+        'read-more read-more button' auto
+        'img img img' auto / 1fr 1fr 1fr;
+      height: fit-content;
+
+      img {
+        mask-image: none;
+      }
+    }
+
+    &__img {
+      justify-self: center;
+      position: relative;
+      mask-image: none;
+      margin: 1rem 0;
+    }
+  }
+}
+
+@media only screen and (width <= 650px) {
+  .projects {
+    &__item {
+      margin: 0;
+    }
+
+    &__h3 {
+      font-size: 2.5rem;
+    }
+
+    &__git-link {
+      padding: 0.2rem;
+    }
+
+    &__git-link_text {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (width <= 500px) {
+  .projects {
+    &_container {
+      // padding: 0;
+    }
+
+    &__item,
+    &__item.align-right {
+      grid-template:
+        'h3 h3 h3' auto
+        'git-link git-link git-link' auto
+        'descr descr descr' auto
+        'button button button' auto
+        'read-more read-more read-more' auto
+        'img img img' auto / 1fr 1fr 1fr;
+      justify-items: center;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }

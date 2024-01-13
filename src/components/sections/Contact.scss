@@ -21,3 +21,11 @@
     color: v.$green;
   }
 }
+
+@media only screen and (width <= 500px) {
+  .contact {
+    &__list {
+      margin: 0;
+    }
+  }
+}
