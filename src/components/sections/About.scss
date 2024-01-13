@@ -1,13 +1,19 @@
 @use '@styles/variables' as v;
 
 .about {
-  position: relative;
-  display: grid;
+  display: flex;
+  height: 100vh;
   align-items: center;
-  grid-template:
-    '. h2' 1fr
-    '. text' 4fr/ 2fr 2fr;
-  column-gap: 2.7rem;
+
+  &_container {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template:
+      '. h2' 1fr
+      '. text' 4fr/ 2fr 2fr;
+    column-gap: 2.7rem;
+  }
 
   &__img {
     position: absolute;

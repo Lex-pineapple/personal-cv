@@ -91,3 +91,10 @@ h3 {
     color: v.$white;
   }
 }
+
+@media only screen and (height <= 1000px) {
+  .front,
+  .about {
+    height: 1000px;
+  }
+}

@@ -1,12 +1,16 @@
 @use '@styles/variables' as v;
 
 .header {
-  position: relative;
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 2.7rem;
   padding: 0.8rem 0.5rem;
+  background: linear-gradient(0deg, transparent, v.$background-dark 50%);
 
   &__list {
     display: flex;
