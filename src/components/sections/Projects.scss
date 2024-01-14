@@ -10,9 +10,9 @@
       'descr descr descr .' 1fr
       'read-more read-more button .' 1fr
       '. . . .' 4fr / 1fr 1fr 1fr 3fr;
+    margin: 0 2rem;
     height: 27.7rem;
     padding-top: 1.4rem;
-    margin: 0 2rem;
 
     &.align-right {
       grid-template:
@@ -158,10 +158,10 @@
     }
 
     &__img {
-      justify-self: center;
       position: relative;
-      mask-image: none;
       margin: 1rem 0;
+      justify-self: center;
+      mask-image: none;
     }
   }
 }
@@ -205,8 +205,8 @@
     }
 
     &__img {
-      width: 100%;
       height: 100%;
+      width: 100%;
     }
   }
 }

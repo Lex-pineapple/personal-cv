@@ -27,6 +27,7 @@
     border-radius: 0.8rem;
     height: 11rem;
     width: 11rem;
+    animation: 1s ease-out 0s 1 slide-up;
 
     &-wrapper {
       position: relative;
@@ -52,11 +53,12 @@
   &__strong {
     font-family: Inter, sans-serif;
     font-size: 2.7rem;
+    animation: 1s ease-out 0s 1 slide-left;
   }
 
   &__h1 {
-    line-height: 1;
     margin: 1.5rem 0 0;
+    line-height: 1;
     font-weight: 700;
     text-align: left;
     grid-area: h1;
@@ -67,6 +69,8 @@
   }
 
   &__text {
+    animation: 1s ease-out 0s 1 slide-left;
+
     &.text_descr {
       margin: 3.3rem 0 0.8rem;
       grid-area: text;
@@ -83,6 +87,7 @@
     font-size: 1.3rem;
     font-weight: 500;
     color: v.$light-gray;
+    animation: 1s ease-out 0s 1 slide-left;
     text-align: left;
     grid-area: subtext;
   }
@@ -131,6 +136,30 @@
   }
 }
 
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media only screen and (width <= 1100px) {
   .front {
     &_container {
@@ -138,12 +167,6 @@
     }
   }
 }
-
-// @media only screen and (height <= 1000px) {
-//   .front {
-//     height: 1000px;
-//   }
-// }
 
 @media only screen and (width <= 800px) {
   .front {
@@ -160,8 +183,8 @@
     }
 
     &_buttons_container {
-      margin: 1em 0;
       flex-direction: row;
+      margin: 1em 0;
     }
 
     &__text {
@@ -193,8 +216,8 @@
     }
 
     &__img {
-      width: 20rem;
       height: 20rem;
+      width: 20rem;
 
       &-wrapper {
         &::after {
@@ -207,8 +230,8 @@
     &__text {
       &.text_descr,
       &.text_additional {
-        font-size: 1.2rem;
         margin-top: 1rem;
+        font-size: 1.2rem;
       }
     }
 
@@ -225,13 +248,13 @@
     }
 
     &__img {
-      width: 80vw;
       height: 80vw;
+      width: 80vw;
 
       &-wrapper {
         &::after {
-          width: 80vw;
           height: 80vw;
+          width: 80vw;
         }
       }
     }
@@ -246,13 +269,13 @@
     }
 
     &__img {
-      width: 70vw;
       height: 70vw;
+      width: 70vw;
 
       &-wrapper {
         &::after {
-          width: 70vw;
           height: 70vw;
+          width: 70vw;
         }
       }
     }
