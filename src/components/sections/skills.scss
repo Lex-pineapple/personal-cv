@@ -8,13 +8,6 @@
     gap: 0.8rem;
   }
 
-  &__card {
-    width: 20rem;
-    border: 1px solid v.$dk-gray;
-    border-radius: 0.8rem;
-    background-color: v.$dker-gray;
-  }
-
   &__cards {
     display: grid;
     width: min-content;
@@ -24,55 +17,10 @@
   }
 
   & .card {
-    &__meter {
-      display: flex;
-      margin-left: 1.4rem;
-      gap: 0.5rem;
-    }
-
-    &__meter_circle {
-      width: 0.8rem;
-      height: 0.8rem;
-      border: 0.08rem solid v.$skills-color;
-      border-radius: 50%;
-
-      &.filled {
-        background-color: v.$skills-color;
-      }
-    }
-
-    &__name {
-      margin: 0.5rem 0 0 1.4rem;
-      font-size: 2.7rem;
-      font-weight: 900;
-      text-align: left;
-    }
-
-    &__list {
-      padding: 1.7rem;
-      border-top: 0.03rem solid v.$dk-gray;
-    }
-
-    &__item {
-      position: relative;
-      margin-left: 0.5rem;
-      font-size: 1.3rem;
-      list-style-type: none;
-      text-align: left;
-
-      &::before {
-        position: absolute;
-        top: 0.75em;
-        left: -0.5rem;
-        display: block;
-        width: 0.2rem;
-        height: 0.2rem;
-        border-radius: 50%;
-        background-color: v.$skills-color;
-        box-shadow: 0 0 0.3rem 0.03rem v.$skills-color;
-        content: '';
-      }
-    }
+    width: 20rem;
+    border: 1px solid v.$dk-gray;
+    border-radius: 0.8rem;
+    background-color: v.$dker-gray;
   }
 }
 
@@ -85,7 +33,7 @@
       padding: 0 2rem;
     }
 
-    &__card {
+    & .card {
       width: 100%;
     }
   }
@@ -102,7 +50,7 @@
       padding: 0 1rem;
     }
 
-    & .item_selectable {
+    & .type-selector__item {
       padding: 0.2rem 0.5rem;
       font-size: 1rem;
     }

@@ -1,17 +1,19 @@
+import './skills-card.scss';
+
 export function SkillsCard() {
   return (
-    <div className="skills__card">
+    <div className="card">
       <div className="card__name">WEB</div>
       <div className="card__meter">
-        <div className="card__meter_circle filled" />
-        <div className="card__meter_circle filled" />
-        <div className="card__meter_circle filled" />
-        <div className="card__meter_circle filled" />
-        <div className="card__meter_circle filled" />
-        <div className="card__meter_circle filled" />
-        <div className="card__meter_circle filled" />
-        <div className="card__meter_circle" />
-        <div className="card__meter_circle" />
+        <div className="card__meter-circle--filled" />
+        <div className="card__meter-circle--filled" />
+        <div className="card__meter-circle--filled" />
+        <div className="card__meter-circle--filled" />
+        <div className="card__meter-circle--filled" />
+        <div className="card__meter-circle--filled" />
+        <div className="card__meter-circle--filled" />
+        <div className="card__meter-circle" />
+        <div className="card__meter-circle" />
       </div>
       <ul className="card__list list">
         <li className="card__item">HTML</li>

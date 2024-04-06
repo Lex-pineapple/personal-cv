@@ -5,11 +5,11 @@ import './skills.scss';
 export function Skills() {
   return (
     <div className="skills">
-      <div className="skills_container">
-        <h2 className="skills__h2 h2">Skills</h2>
-        <div className="skills__type-selector">
-          <div className="item_selectable active">Hard Skills</div>
-          <div className="item_selectable">Soft Skills</div>
+      <div className="skills__container">
+        <div className="skills__h2 h2">Skills</div>
+        <div className="skills__type-selector type-selector">
+          <div className="type-selector__item type-selector__item--active">Hard Skills</div>
+          <div className="type-selector__item type-selector__item--active">Soft Skills</div>
         </div>
         <div className="skills__cards">
           <SkillsCard />
