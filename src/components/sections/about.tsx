@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import Placeholder from '@assets/Placeholder.png';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-import './About.scss';
+import './about.scss';
 
 export function About() {
   const ref1 = useRef(null);

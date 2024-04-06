@@ -1,6 +1,6 @@
 import { SkillsCard } from '@components/minor/skills-card';
 
-import './Skills.scss';
+import './skills.scss';
 
 export function Skills() {
   return (

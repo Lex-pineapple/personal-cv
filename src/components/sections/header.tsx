@@ -1,7 +1,7 @@
 import { LangSwitch } from '@components/minor/lang-switch';
 import { NavItem } from '@components/minor/nav-item';
 
-import './Header.scss';
+import './header.scss';
 
 export function Header() {
   return (

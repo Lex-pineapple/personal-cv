@@ -2,7 +2,7 @@ import Placeholder from '@assets/Placeholder.png';
 import { GithubIcon } from '@components/svg/github-icon';
 import { LinkedinIcon } from '@components/svg/linkedin-icon';
 
-import './Front.scss';
+import './front.scss';
 
 export function Front() {
   return (

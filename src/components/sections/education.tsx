@@ -1,6 +1,6 @@
 import { EducationItem } from '@components/minor/education-item';
 
-import './Education.scss';
+import './education.scss';
 
 export function Education() {
   return (

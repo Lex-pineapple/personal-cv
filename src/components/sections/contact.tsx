@@ -1,6 +1,6 @@
 import { EmailIcon } from '@components/svg/email-icon';
 
-import './Contact.scss';
+import './contact.scss';
 
 export function Contact() {
   return (
