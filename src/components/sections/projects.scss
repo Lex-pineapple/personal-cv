@@ -4,15 +4,15 @@
   &__item {
     position: relative;
     display: grid;
+    height: 27.7rem;
     align-items: center;
+    padding-top: 1.4rem;
+    margin: 0 2rem;
     grid-template:
       'h3 h3 git-link .' 1fr
       'descr descr descr .' 1fr
       'read-more read-more button .' 1fr
       '. . . .' 4fr / 1fr 1fr 1fr 3fr;
-    margin: 0 2rem;
-    height: 27.7rem;
-    padding-top: 1.4rem;
 
     &.align-right {
       grid-template:
@@ -30,8 +30,8 @@
 
   &__h3 {
     margin: 0;
-    text-align: left;
     grid-area: h3;
+    text-align: left;
   }
 
   &__text {
@@ -43,18 +43,18 @@
 
     &.text_read-more {
       margin-right: 0.5rem;
-      text-align: right;
       grid-area: read-more;
+      text-align: right;
     }
   }
 
   &__button {
-    background-color: v.$prj-color;
-    height: fit-content;
     width: fit-content;
+    height: fit-content;
     padding: 0.5rem 2rem;
-    font-size: 1rem;
+    background-color: v.$prj-color;
     color: v.$white;
+    font-size: 1rem;
     grid-area: button;
   }
 
@@ -67,8 +67,8 @@
     position: absolute;
     top: -1.4rem;
     right: 0;
-    border-radius: 0.8rem;
     height: 27.7rem;
+    border-radius: 0.8rem;
     grid-area: img;
     mask-image: -webkit-gradient(
       linear,
@@ -84,13 +84,13 @@
 .projects_modal {
   position: relative;
   display: grid;
+  width: 40rem;
+  height: 27.5rem;
   grid-template:
     'h3 h3' 1fr
     'descr-cont .' 1fr
     'descr-cont .' 4fr
     'read-more button' 0.5fr / 2fr 3fr;
-  height: 27.5rem;
-  width: 40rem;
 
   & .h3 {
     font-size: 2.4rem;
@@ -98,12 +98,10 @@
   }
 
   & .projects__descr_container {
-    margin-left: 2.7rem;
-    width: 16.4rem;
     overflow: hidden;
-
-    // overflow-y: scroll;
+    width: 16.4rem;
     padding-right: 0.8rem;
+    margin-left: 2.7rem;
     grid-area: descr-cont;
   }
 
@@ -145,12 +143,12 @@
   .projects {
     &__item,
     &__item.align-right {
+      height: fit-content;
       grid-template:
         'h3 h3 git-link' auto
         'descr descr descr' auto
         'read-more read-more button' auto
         'img img img' auto / 1fr 1fr 1fr;
-      height: fit-content;
 
       img {
         mask-image: none;
@@ -188,10 +186,6 @@
 
 @media only screen and (width <= 500px) {
   .projects {
-    &_container {
-      // padding: 0;
-    }
-
     &__item,
     &__item.align-right {
       grid-template:
@@ -205,8 +199,8 @@
     }
 
     &__img {
-      height: 100%;
       width: 100%;
+      height: 100%;
     }
   }
 }

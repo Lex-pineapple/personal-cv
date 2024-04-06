@@ -3,24 +3,24 @@
 .skills {
   &__type-selector {
     display: flex;
-    margin: 0 auto;
     width: fit-content;
+    margin: 0 auto;
     gap: 0.8rem;
   }
 
   &__card {
+    width: 20rem;
     border: 1px solid v.$dk-gray;
     border-radius: 0.8rem;
     background-color: v.$dker-gray;
-    width: 20rem;
   }
 
   &__cards {
     display: grid;
-    grid-template: auto auto/ auto auto;
-    margin: 1.4rem auto;
     width: min-content;
+    margin: 1.4rem auto;
     gap: 1.4rem;
+    grid-template: auto auto/ auto auto;
   }
 
   & .card {
@@ -31,10 +31,10 @@
     }
 
     &__meter_circle {
+      width: 0.8rem;
+      height: 0.8rem;
       border: 0.08rem solid v.$skills-color;
       border-radius: 50%;
-      height: 0.8rem;
-      width: 0.8rem;
 
       &.filled {
         background-color: v.$skills-color;
@@ -49,28 +49,28 @@
     }
 
     &__list {
-      border-top: 0.03rem solid v.$dk-gray;
       padding: 1.7rem;
+      border-top: 0.03rem solid v.$dk-gray;
     }
 
     &__item {
       position: relative;
       margin-left: 0.5rem;
-      list-style-type: none;
       font-size: 1.3rem;
+      list-style-type: none;
       text-align: left;
 
       &::before {
         position: absolute;
         top: 0.75em;
         left: -0.5rem;
-        content: '';
         display: block;
+        width: 0.2rem;
+        height: 0.2rem;
         border-radius: 50%;
         background-color: v.$skills-color;
-        height: 0.2rem;
-        width: 0.2rem;
         box-shadow: 0 0 0.3rem 0.03rem v.$skills-color;
+        content: '';
       }
     }
   }
@@ -80,8 +80,8 @@
   .skills {
     &__cards {
       display: flex;
-      flex-direction: column;
       width: auto;
+      flex-direction: column;
       padding: 0 2rem;
     }
 
@@ -123,8 +123,8 @@
     }
 
     .card__meter_circle {
-      height: 0.4rem;
       width: 0.4rem;
+      height: 0.4rem;
     }
   }
 }
