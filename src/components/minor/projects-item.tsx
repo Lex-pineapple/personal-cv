@@ -1,5 +1,5 @@
-import { GitSee } from '@components/minor/gitSee';
 import Placeholder from '@assets/Placeholder.png';
+import { GitSee } from '@components/minor/git-see';
 
 export function ProjectsItem() {
   return (
@@ -11,7 +11,9 @@ export function ProjectsItem() {
         incididunt ut labore et dolore magna aliqua.
       </p>
       <p className="projects__text text text_read-more">Read more</p>
-      <button className="projects__button button">Preview</button>
+      <button type="button" className="projects__button button">
+        Preview
+      </button>
       <GitSee sectionName="projects" innerText="See the code" />
       <img src={Placeholder} alt="" className="projects__img img img-background" />
     </div>

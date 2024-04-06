@@ -1,4 +1,5 @@
-import { SkillsCard } from '@components/minor/skillsCard';
+import { SkillsCard } from '@components/minor/skills-card';
+
 import './Skills.scss';
 
 export function Skills() {

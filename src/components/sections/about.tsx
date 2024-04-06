@@ -1,14 +1,15 @@
-import Placeholder from '@assets/Placeholder.png';
-import './About.scss';
-import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import Placeholder from '@assets/Placeholder.png';
+import { motion, useScroll, useTransform } from 'framer-motion';
+
+import './About.scss';
 
 export function About() {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref1 });
-  const x = useTransform(scrollYProgress, [0, 1], [0, 300]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+  const x = useTransform(scrollYProgress, [0.5, 1], [0, 300]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.5]);
 
   return (
     <div className="about">
@@ -21,21 +22,21 @@ export function About() {
         </motion.div>
         <div className="about__text-container">
           <div className="about__text-line">
-            <div className="dec_item"></div>
+            <div className="dec_item" />
             <p className="about__text text">
               Hi! Im Lorem Ipsum! Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
           <div className="about__text-line">
-            <div className="dec_item"></div>
+            <div className="dec_item" />
             <p className="about__text text">
               Hi! Im Lorem Ipsum! Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
           <div className="about__text-line">
-            <div className="dec_item"></div>
+            <div className="dec_item" />
             <p className="about__text text">
               Hi! Im Lorem Ipsum! Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua.

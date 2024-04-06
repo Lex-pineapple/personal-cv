@@ -1,4 +1,4 @@
-import { GithubIcon } from '@components/svg/GithubIcon';
+import { GithubIcon } from '@components/svg/github-icon';
 
 interface IGitSeeProps {
   sectionName: string;
@@ -11,7 +11,7 @@ export function GitSee(props: IGitSeeProps) {
       <p className={`${props.sectionName || 'noSec'}__git-link_text git-link__text text`}>
         {props.innerText}
       </p>
-      <GithubIcon sectionName={'projects'} />
+      <GithubIcon sectionName="projects" />
     </div>
   );
 }

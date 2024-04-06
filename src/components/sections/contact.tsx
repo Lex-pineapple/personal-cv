@@ -1,4 +1,5 @@
-import { EmailIcon } from '@components/svg/EmailIcon';
+import { EmailIcon } from '@components/svg/email-icon';
+
 import './Contact.scss';
 
 export function Contact() {
@@ -9,7 +10,8 @@ export function Contact() {
         <ul className="contact__list list">
           <li className="contact__item">
             <EmailIcon sectionName="contact" />
-            <p className="contact__text text"></p>email@mail.mail
+            <p className="contact__text text" />
+            email@mail.mail
           </li>
         </ul>
       </div>

@@ -1,4 +1,5 @@
-import { GitSee } from '@components/minor/gitSee';
+import { GitSee } from '@components/minor/git-see';
+
 import './Footer.scss';
 
 export function Footer() {
