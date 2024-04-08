@@ -1,4 +1,6 @@
-& .card {
+@use '@styles/variables' as v;
+
+.card {
   &__meter {
     display: flex;
     margin-left: 1.4rem;

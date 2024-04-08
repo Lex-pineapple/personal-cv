@@ -14,8 +14,10 @@
   "dependencies": {
     "@vitejs/plugin-react": "^4.2.1",
     "framer-motion": "^10.18.0",
+    "i18next": "^23.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^14.1.0",
     "react-router-dom": "^6.21.1",
     "vite": "^5.0.8"
   },

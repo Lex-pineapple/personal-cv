@@ -8,15 +8,15 @@ export function Header() {
     <header className="header">
       <nav className="header__nav nav">
         <ul className="header__list list list_nav">
-          <NavItem innerText="About" />
+          <NavItem innerText="About" link="#about" />
           <span className="header__delim" />
-          <NavItem innerText="Education" />
+          <NavItem innerText="Education" link="#edu" />
           <span className="header__delim" />
-          <NavItem innerText="Projects" />
+          <NavItem innerText="Projects" link="#projects" />
           <span className="header__delim" />
-          <NavItem innerText="Skills" />
+          <NavItem innerText="Skills" link="#skills" />
           <span className="header__delim" />
-          <NavItem innerText="Contacts" />
+          <NavItem innerText="Contacts" link="#contacts" />
         </ul>
       </nav>
       <LangSwitch />

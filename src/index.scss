@@ -2,6 +2,10 @@
 @import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap';
 @import '@styles/normalize';
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   background-color: v.$background-dark;
   color: v.$white;
@@ -22,6 +26,10 @@ body {
   min-height: 100vh;
   margin: 0;
   place-items: center;
+}
+
+.button {
+  width: fit-content;
 }
 
 @media only screen and (width <= 1920px) {

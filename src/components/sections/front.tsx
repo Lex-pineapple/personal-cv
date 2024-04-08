@@ -1,15 +1,18 @@
-import Placeholder from '@assets/Placeholder.png';
+import { useTranslation } from 'react-i18next';
+import Avatar from '@assets/avatar.jpg';
 import { GithubIcon } from '@components/svg/github-icon';
 import { LinkedinIcon } from '@components/svg/linkedin-icon';
 
 import './front.scss';
 
 export function Front() {
+  const { t } = useTranslation();
+
   return (
-    <div className="front">
+    <div className="front" id="front">
       <div className="front_container">
         <div className="front__img-wrapper">
-          <img src={Placeholder} alt="Profile" className="front__img img" />
+          <img src={Avatar} alt="Profile" className="front__img img" />
         </div>
         <div className="front_buttons_container">
           <button type="button" className="front__button button button_download">
@@ -20,19 +23,19 @@ export function Front() {
           </button>
         </div>
         <h1 className="front__h1 h1">
-          Name <strong className="front__strong strong strong_color_blue">Surname</strong>
+          Анастасия <strong className="front__strong strong strong_color_blue">Сонич</strong>
         </h1>
-        <p className="front__subtext">Full-Stack Developer</p>
+        <p className="front__subtext">Junior Front-End разработчик</p>
         <p className="front__text text text_descr">
-          Hi! Im Lorem Ipsum! Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.
+          Я Front-End разработчик ис Минска, имею знания Typescript, SASS, Node.js, Prisma, Docker.
+          ...
         </p>
-        <p className="front__text text text_additional">
+        {/* <p className="front__text text text_additional">
           Looking for more laconic version of this site?
         </p>
         <button type="button" className="front__button button">
           Simplified version
-        </button>
+        </button> */}
         <GithubIcon sectionName="front" />
         <LinkedinIcon sectionName="front" />
         {/* <p className="front__symbol symbol symbol_arrow-down"></p> */}

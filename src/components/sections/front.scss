@@ -104,7 +104,10 @@
     grid-area: button;
 
     &.button_email {
+      border: 2px solid #fff;
       margin: 0.27rem auto;
+      background: none;
+      color: #fff;
     }
 
     &.button_download {
