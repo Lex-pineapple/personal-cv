@@ -1,51 +1,42 @@
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
-  extends: [
-    'plugin:react/recommended',
-    // 'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-type-checked',
-    'plugin:prettier/recommended',
-    'prettier',
-    'plugin:react-hooks/recommended',
-  ],
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  extends: [require.resolve('arui-presets-lint/eslint')],
+  ignorePatterns: ['dist', 'coverage', '*.cjs'],
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: ['./tsconfig.eslint.json', './cypress/tsconfig.json'],
+  },
   plugins: ['react-refresh',
   '@typescript-eslint',
   'react',
   'prettier',
   'react-hooks'],
+  overrides: [
+    {
+        files: ['cypress/**/*.ts'],
+        rules: {
+            'cypress/no-unnecessary-waiting': 'off',
+        },
+    },
+    {
+        files: ['src/redux/**/*.ts'],
+        rules: {
+            'no-param-reassign': 'off',
+            'no-return-assign': 'off',
+            'import/no-default-export': 'off',
+        },
+    },
+],
   rules: {
-    'react-refresh/only-export-components': 'warn',
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
-    'comma-dangle': ['error', 'only-multiline'],
-    'react/prop-types': 'off',
-    'react/display-name': 'warn',
-    'react/jsx-key': 'warn',
-    'react/jsx-uses-react': 'off',
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+    'import/no-absolute-path': 'off',
     'react/react-in-jsx-scope': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/explicit-function-return-type': ['off', { allowExpressions: true }],
-    '@typescript-eslint/ban-ts-comment': 'error',
-    '@typescript-eslint/no-non-null-assertion': 'error',
-    '@typescript-eslint/no-empty-function': 'warn',
-    '@typescript-eslint/no-explicit-any': 'error',
-    '@typescript-eslint/no-unsafe-call': 'off',
-    '@typescript-eslint/no-unsafe-member-access': 'off',
-    'prettier/prettier': ['error', { endOfLine: 'auto' }],
-    // 'import/no-unresolved': 'error',
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
-  },
+    'import/no-extraneous-dependencies': [
+        'error',
+        {
+            devDependencies: ['cypress/**/*.ts', '/*.test.{ts,tsx,js,jsx}'],
+        },
+    ]
+},
 }

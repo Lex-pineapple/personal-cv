@@ -1,7 +1,7 @@
-import { ButtonTop } from '@components/minor/buttonTop';
-import './App.scss';
 import { About, Contact, Education, Footer, Front, Header, Projects, Skills } from '@components';
-import { ProjectModal } from '@components/modals/projectModal';
+import { ButtonTop } from '@components/minor/button-top';
+
+import './app.scss';
 
 function App() {
   return (

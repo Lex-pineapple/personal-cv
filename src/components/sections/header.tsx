@@ -1,21 +1,22 @@
-import { NavItem } from '@components/minor/navItem';
-import './Header.scss';
-import { LangSwitch } from '@components/minor/langSwitch';
+import { LangSwitch } from '@components/minor/lang-switch';
+import { NavItem } from '@components/minor/nav-item';
+
+import './header.scss';
 
 export function Header() {
   return (
     <header className="header">
       <nav className="header__nav nav">
         <ul className="header__list list list_nav">
-          <NavItem innerText="About" />
-          <span className="header__delim"></span>
-          <NavItem innerText="Education" />
-          <span className="header__delim"></span>
-          <NavItem innerText="Projects" />
-          <span className="header__delim"></span>
-          <NavItem innerText="Skills" />
-          <span className="header__delim"></span>
-          <NavItem innerText="Contacts" />
+          <NavItem innerText="About" link="#about" />
+          <span className="header__delim" />
+          <NavItem innerText="Education" link="#edu" />
+          <span className="header__delim" />
+          <NavItem innerText="Projects" link="#projects" />
+          <span className="header__delim" />
+          <NavItem innerText="Skills" link="#skills" />
+          <span className="header__delim" />
+          <NavItem innerText="Contacts" link="#contacts" />
         </ul>
       </nav>
       <LangSwitch />

@@ -2,12 +2,14 @@
 
 .front {
   display: flex;
-  align-items: center;
-  min-height: 1000px;
   height: fit-content;
+  min-height: 1000px;
+  align-items: center;
 
   &_container {
     display: grid;
+    padding: 0 5.5rem;
+    column-gap: 0.5rem;
     grid-template:
       'img h1 h1'
       'img subtext subtext'
@@ -17,49 +19,47 @@
       '.  github linkedin';
     grid-template-columns: 16.5rem 1fr 3fr;
     grid-template-rows: auto;
-
-    // margin-bottom: 12rem;
-    padding: 0 5.5rem;
-    column-gap: 0.5rem;
   }
 
   &__img {
-    border-radius: 0.8rem;
-    height: 11rem;
     width: 11rem;
+    height: 11rem;
+    border-radius: 0.8rem;
+    animation: 1s ease-out 0s 1 slide-up;
 
     &-wrapper {
       position: relative;
-      place-self: center center;
       grid-area: img;
+      place-self: center center;
 
       &::after {
-        z-index: -1;
         position: absolute;
+        z-index: -1;
         top: 0.5rem;
         left: 0.5rem;
-        content: '';
         display: block;
+        width: 11rem;
+        height: 11rem;
         border-radius: 0.8rem;
         background-color: v.$front-color;
-        height: 11rem;
-        width: 11rem;
+        content: '';
       }
     }
   }
 
   &__h1,
   &__strong {
+    animation: 1s ease-out 0s 1 slide-left;
     font-family: Inter, sans-serif;
     font-size: 2.7rem;
   }
 
   &__h1 {
-    line-height: 1;
     margin: 1.5rem 0 0;
     font-weight: 700;
-    text-align: left;
     grid-area: h1;
+    line-height: 1;
+    text-align: left;
   }
 
   &__strong {
@@ -67,6 +67,8 @@
   }
 
   &__text {
+    animation: 1s ease-out 0s 1 slide-left;
+
     &.text_descr {
       margin: 3.3rem 0 0.8rem;
       grid-area: text;
@@ -80,11 +82,12 @@
 
   &__subtext {
     margin: 0;
+    animation: 1s ease-out 0s 1 slide-left;
+    color: v.$light-gray;
     font-size: 1.3rem;
     font-weight: 500;
-    color: v.$light-gray;
-    text-align: left;
     grid-area: subtext;
+    text-align: left;
   }
 
   &_buttons_container {
@@ -94,14 +97,17 @@
   }
 
   &__button {
-    background-color: v.$front-color;
-    height: fit-content;
     width: fit-content;
+    height: fit-content;
+    background-color: v.$front-color;
     font-size: 0.8rem;
     grid-area: button;
 
     &.button_email {
+      border: 2px solid #fff;
       margin: 0.27rem auto;
+      background: none;
+      color: #fff;
     }
 
     &.button_download {
@@ -115,8 +121,8 @@
     place-self: center center;
 
     &.icon-github {
-      justify-self: right;
       grid-area: github;
+      justify-self: right;
     }
 
     &.icon-linkedin {
@@ -131,6 +137,30 @@
   }
 }
 
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media only screen and (width <= 1100px) {
   .front {
     &_container {
@@ -139,15 +169,10 @@
   }
 }
 
-// @media only screen and (height <= 1000px) {
-//   .front {
-//     height: 1000px;
-//   }
-// }
-
 @media only screen and (width <= 800px) {
   .front {
     &_container {
+      column-gap: 2rem;
       grid-template:
         'img h1'
         'img subtext'
@@ -156,12 +181,11 @@
         'text-add text-add'
         'button button'
         'github linkedin';
-      column-gap: 2rem;
     }
 
     &_buttons_container {
-      margin: 1em 0;
       flex-direction: row;
+      margin: 1em 0;
     }
 
     &__text {
@@ -181,6 +205,7 @@
 @media only screen and (width <= 750px) {
   .front {
     &_container {
+      column-gap: 2rem;
       grid-template:
         'img'
         'h1'
@@ -189,7 +214,6 @@
         'text-add'
         'button'
         'btns';
-      column-gap: 2rem;
     }
 
     &__img {
@@ -198,8 +222,8 @@
 
       &-wrapper {
         &::after {
-          height: 20rem;
           width: 20rem;
+          height: 20rem;
         }
       }
     }
@@ -207,8 +231,8 @@
     &__text {
       &.text_descr,
       &.text_additional {
-        font-size: 1.2rem;
         margin-top: 1rem;
+        font-size: 1.2rem;
       }
     }
 

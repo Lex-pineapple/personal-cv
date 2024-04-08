@@ -1,4 +1,4 @@
-import { ArrowUpIcon } from '@components/svg/ArrowUpIcon';
+import { ArrowUpIcon } from '@components/svg/arrow-up-icon';
 
 export function ButtonTop() {
   return (

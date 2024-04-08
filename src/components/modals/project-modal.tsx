@@ -22,7 +22,9 @@ export function ProjectModal() {
         </p>
       </div>
       <p className="projects__text text text_read-more">Read more</p>
-      <button className="projects__button button">Preview</button>
+      <button type="button" className="projects__button button">
+        Preview
+      </button>
       <img src={Placeholder} alt="" className="projects__img img img-background" />
     </div>
   );
