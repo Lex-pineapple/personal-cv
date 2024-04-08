@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next';
 import Avatar from '@assets/avatar.jpg';
 import { GithubIcon } from '@components/svg/github-icon';
 import { LinkedinIcon } from '@components/svg/linkedin-icon';
@@ -6,8 +5,6 @@ import { LinkedinIcon } from '@components/svg/linkedin-icon';
 import './front.scss';
 
 export function Front() {
-  const { t } = useTranslation();
-
   return (
     <div className="front" id="front">
       <div className="front_container">
