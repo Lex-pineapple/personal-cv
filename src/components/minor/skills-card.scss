@@ -51,3 +51,45 @@
     }
   }
 }
+
+@media only screen and (width <= 650px) {
+  .card {
+    &__name {
+      font-size: 2rem;
+    }
+
+    &__item {
+      font-size: 1.1rem;
+    }
+
+    &__list {
+      padding: 1rem;
+    }
+  }
+}
+
+@media only screen and (width <= 450px) {
+  .card {
+    &__name {
+      font-size: 1.5rem;
+    }
+
+    &__item {
+      font-size: 0.7rem;
+    }
+
+    &__name,
+    &__meter {
+      margin-left: 0.8rem;
+    }
+
+    &__meter {
+      gap: 0.3rem;
+
+      &-circle {
+        width: 0.4rem;
+        height: 0.4rem;
+      }
+    }
+  }
+}

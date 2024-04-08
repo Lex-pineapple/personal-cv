@@ -100,3 +100,18 @@ h3 {
     height: 1000px;
   }
 }
+
+@media only screen and (width <= 1000px) {
+  .edu,
+  .projects,
+  .skills,
+  .contact {
+    margin-top: 8rem;
+  }
+}
+
+@media only screen and (width <= 620px) {
+  .skills {
+    margin-top: 0;
+  }
+}

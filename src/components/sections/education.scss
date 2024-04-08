@@ -5,6 +5,7 @@
   height: fit-content;
   min-height: 1000px;
   align-items: center;
+  padding-right: 3rem;
 
   &_container {
     width: 100%;
@@ -37,6 +38,7 @@
   }
 
   &__button {
+    margin: 20px;
     background-color: v.$edu-color;
     color: v.$white;
     font-weight: 500;
@@ -81,13 +83,34 @@
   }
 }
 
-@media only screen and (width <= 500px) {
+@media only screen and (width <= 510px) {
   .edu {
+    padding: 0 1rem;
+
     &__list {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 0;
+    }
+
+    &__text {
+      &.text_name {
+        font-size: 1rem;
+      }
+
+      & li {
+        font-size: 0.7rem;
+      }
+    }
+
+    &__item {
+      grid-template:
+        '. circle name' auto
+        '. date .' auto
+        '. line subtext' auto
+        '. line button' auto
+        '. line .' auto/ auto;
     }
   }
 }

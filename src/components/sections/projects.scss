@@ -19,11 +19,15 @@
         '. h3 h3 git-link' 1fr
         '. descr descr .' 1fr
         '. read-more read-more button' 1fr
-        '. . . .' 4fr / 3fr 1fr 1fr 1fr;
+        '. . . .' 4fr / 2fr 1fr 1fr 1fr;
 
       & img {
-        left: 0;
         mask-image: linear-gradient(to right, rgb(0 0 0 / 100%), rgb(0 0 0 / 0%));
+      }
+
+      & .projects__img-wrapper {
+        left: 0;
+        display: flex;
       }
     }
   }
@@ -65,12 +69,8 @@
   }
 
   &__img {
-    position: absolute;
-    top: -1.4rem;
-    right: 0;
-    height: 27.7rem;
+    height: 100%;
     border-radius: 0.8rem;
-    grid-area: img;
     mask-image: -webkit-gradient(
       linear,
       left right,
@@ -79,6 +79,14 @@
       to(rgb(0 0 0 / 0%))
     );
     mask-image: linear-gradient(to left, rgb(0 0 0 / 100%), rgb(0 0 0 / 0%));
+
+    &-wrapper {
+      position: absolute;
+      top: -1.4rem;
+      right: 0;
+      height: 27.7rem;
+      grid-area: img;
+    }
   }
 }
 
@@ -134,8 +142,19 @@
     }
 
     &__img {
-      top: 0;
       height: 20rem;
+
+      &-wrapper {
+        top: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (width <= 1350px) {
+  .projects {
+    &__h3 {
+      font-size: 1.5rem;
     }
   }
 }
@@ -156,23 +175,30 @@
       }
     }
 
+    &_container {
+      padding: 0;
+    }
+
     &__img {
-      position: relative;
-      margin: 1rem 0;
-      justify-self: center;
+      border-radius: none;
       mask-image: none;
+
+      &-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 0.8rem;
+        margin: 1rem 0;
+        justify-self: center;
+      }
     }
   }
 }
 
 @media only screen and (width <= 650px) {
   .projects {
-    &__item {
-      margin: 0;
-    }
-
     &__h3 {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
     }
 
     &__git-link {
@@ -190,8 +216,7 @@
     &__item,
     &__item.align-right {
       grid-template:
-        'h3 h3 h3' auto
-        'git-link git-link git-link' auto
+        'h3 h3 git-link' auto
         'descr descr descr' auto
         'button button button' auto
         'read-more read-more read-more' auto
@@ -199,9 +224,20 @@
       justify-items: center;
     }
 
+    &__h3 {
+      font-size: 1rem;
+    }
+
+    &__text {
+      font-size: 0.7rem;
+    }
+
     &__img {
-      width: 100%;
-      height: 100%;
+      height: 50%;
+    }
+
+    &__git-link_text {
+      display: none;
     }
   }
 }

@@ -2,7 +2,7 @@
 
 .contact {
   &__list {
-    margin: 0 2.7rem;
+    margin: 0 2rem;
   }
 
   &__item {
@@ -22,10 +22,20 @@
   }
 }
 
-@media only screen and (width <= 500px) {
+@media only screen and (width <= 620px) {
   .contact {
     &__list {
       margin: 0;
+    }
+
+    &__item {
+      & .icon {
+        flex-shrink: 0;
+      }
+    }
+
+    &__text {
+      font-size: 0.7rem;
     }
   }
 }

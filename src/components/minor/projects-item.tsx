@@ -26,7 +26,9 @@ export function ProjectsItem(props: ProjectItemProps) {
         </a>
       )}
       <GitSee link={props.codeLink} sectionName="projects" innerText="See the code" />
-      <img src={props.img} alt="" className="projects__img img img-background" />
+      <div className="projects__img-wrapper">
+        <img src={props.img} alt="" className="projects__img img img-background" />
+      </div>
     </div>
   );
 }

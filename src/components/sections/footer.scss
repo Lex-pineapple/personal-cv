@@ -17,3 +17,11 @@
     }
   }
 }
+
+@media only screen and (width <= 600px) {
+  .footer {
+    &__git-link_text {
+      display: none;
+    }
+  }
+}

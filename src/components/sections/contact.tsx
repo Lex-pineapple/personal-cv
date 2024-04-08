@@ -13,23 +13,19 @@ export function Contact() {
         <ul className="contact__list list">
           <li className="contact__item">
             <PhoneIcon sectionName="phone" />
-            <p className="contact__text text" />
-            +375 (29) 142-83-61
+            <p className="contact__text text">+375 (29) 142-83-61</p>
           </li>
           <li className="contact__item">
             <EmailIcon sectionName="contact" />
-            <p className="contact__text text" />
-            pineapplepear55@gmail.com
+            <p className="contact__text text">pineapplepear55@gmail.com</p>
           </li>
           <li className="contact__item">
             <GithubIcon sectionName="github" />
-            <p className="contact__text text" />
-            @Lex-pineapple
+            <p className="contact__text text">@Lex-pineapple</p>
           </li>
           <li className="contact__item">
             <TelegramIcon sectionName="telegram" />
-            <p className="contact__text text" />
-            @Lex-pineapple
+            <p className="contact__text text">@AirfryerBuyOneGetOneFree</p>
           </li>
         </ul>
       </div>

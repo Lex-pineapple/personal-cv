@@ -99,21 +99,26 @@
 
 @media only screen and (width <= 1100px) {
   .about {
+    padding: 2rem;
+
     &_container {
       display: block;
+      padding: 0;
     }
 
     &__img {
       display: none;
+    }
+
+    &__text {
+      font-size: 1.5rem;
     }
   }
 }
 
 @media only screen and (width <= 500px) {
   .about {
-    &_container {
-      padding: 1.5rem;
-    }
+    padding: 2rem;
 
     &__text-line {
       margin: 0;
