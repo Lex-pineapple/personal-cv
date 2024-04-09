@@ -28,6 +28,7 @@
       & .projects__img-wrapper {
         left: 0;
         display: flex;
+        justify-content: center;
       }
     }
   }
@@ -183,7 +184,6 @@
 
     &__img {
       height: 100%;
-      border-radius: 0;
       mask-image: none;
 
       &-wrapper {
