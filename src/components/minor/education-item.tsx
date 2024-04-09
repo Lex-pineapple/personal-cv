@@ -3,6 +3,7 @@ interface IEducationItemProps {
   year: number;
   place: string;
   subtext: JSX.Element;
+  link: string;
 }
 export function EducationItem(props: IEducationItemProps) {
   return (
@@ -12,9 +13,9 @@ export function EducationItem(props: IEducationItemProps) {
       <p className="edu__text text text_date">{props.year}</p>
       <p className="edu__text text text_name">{props.place}</p>
       <ul className="edu__text text text_subtext">{props.subtext}</ul>
-      <button type="button" className="edu__button button">
+      <a href={props.link} className="edu__button button" target="_blank" rel="noreferrer">
         Certificate
-      </button>
+      </a>
     </div>
   );
 }

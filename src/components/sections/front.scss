@@ -13,12 +13,13 @@
     grid-template:
       'img h1 h1'
       'img subtext subtext'
-      'img text text'
-      'btns text-add text-add'
-      'btns button button'
-      '.  github linkedin';
+      'img . .'
+      'btns text text'
+      '. text-add text-add'
+      '. button button'
+      '. github linkedin';
     grid-template-columns: 16.5rem 1fr 3fr;
-    grid-template-rows: auto;
+    grid-template-rows: min-content;
   }
 
   &__img {
@@ -70,7 +71,7 @@
     animation: 1s ease-out 0s 1 slide-left;
 
     &.text_descr {
-      margin: 3.3rem 0 0.8rem;
+      margin: 1.3rem 0 0.8rem;
       grid-area: text;
     }
 
@@ -93,6 +94,7 @@
   &_buttons_container {
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
     grid-area: btns;
   }
 
@@ -115,19 +117,19 @@
     }
   }
 
+  & .github_icon_link {
+    grid-area: github;
+    justify-self: right;
+  }
+
+  & .telegram_icon_link {
+    grid-area: linkedin;
+  }
+
   &__icon {
     margin: 2.7rem 0;
     color: v.$front-color;
     place-self: center center;
-
-    &.icon-github {
-      grid-area: github;
-      justify-self: right;
-    }
-
-    &.icon-linkedin {
-      grid-area: linkedin;
-    }
   }
 }
 
@@ -163,6 +165,9 @@
 
 @media only screen and (width <= 1100px) {
   .front {
+    align-items: flex-start;
+    padding-top: 5rem;
+
     &_container {
       padding: 0 2rem;
       grid-template-columns: 13.5rem 1fr 3fr;
@@ -186,7 +191,9 @@
 
     &_buttons_container {
       flex-direction: row;
+      align-items: center;
       margin: 1em 0;
+      gap: 0.5rem;
     }
 
     &__text {
@@ -205,10 +212,12 @@
 
 @media only screen and (width <= 750px) {
   .front {
+    padding-top: 1rem;
+
     &_container {
       padding: 2rem;
       padding-top: 5rem;
-      column-gap: 2rem;
+      column-gap: 0;
       grid-template:
         'img'
         'h1'
@@ -217,6 +226,7 @@
         'text-add'
         'button'
         'btns';
+      grid-template-columns: auto;
     }
 
     &__img {
@@ -271,6 +281,10 @@
     &__h1,
     &__strong {
       font-size: 2rem;
+    }
+
+    &__text.text_descr {
+      font-size: 0.8rem;
     }
 
     &__img {

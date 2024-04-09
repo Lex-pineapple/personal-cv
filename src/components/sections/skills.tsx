@@ -39,7 +39,7 @@ export function Skills() {
 
   const softSkillsSect = (
     <SkillsCard
-      filled={0}
+      filled={5}
       name="Soft skills"
       inner={[
         'Высокая адаптивность',

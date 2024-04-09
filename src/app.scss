@@ -39,8 +39,8 @@
 }
 
 .icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
 
   &_arrowUp {
     width: 0.8rem;
@@ -55,6 +55,7 @@ h3 {
 }
 
 .git-link {
+  z-index: 10;
   display: flex;
   width: max-content;
   align-items: center;
@@ -94,16 +95,22 @@ h3 {
   }
 }
 
+.about,
+.edu,
+.skills,
+.projects {
+  padding-top: 3rem;
+}
+
 @media only screen and (height <= 1000px) {
   .front,
   .about {
-    height: 1000px;
+    height: 1300px;
   }
 }
 
 @media only screen and (width <= 1000px) {
   .edu,
-  .projects,
   .skills,
   .contact {
     margin-top: 8rem;

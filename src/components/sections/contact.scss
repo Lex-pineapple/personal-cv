@@ -6,19 +6,32 @@
   }
 
   &__item {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    gap: 0.8rem;
+    list-style: none;
+
+    &_link {
+      display: flex;
+      align-items: center;
+      color: white;
+      cursor: pointer;
+      gap: 0.8rem;
+
+      & .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        transition: all ease-in 0.3s;
+      }
+
+      &:hover {
+        & .icon {
+          color: #17ac52;
+          filter: drop-shadow(0 0 0.5rem #17ac52);
+        }
+      }
+    }
   }
 
   &__text {
     font-size: 1.3rem;
-  }
-
-  & .icon-email {
-    color: v.$green;
-    filter: drop-shadow(0 0 0.5rem v.$green);
   }
 }
 

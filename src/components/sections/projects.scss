@@ -34,6 +34,7 @@
 
   &__h3 {
     margin: 0;
+    margin-right: 0.2rem;
     grid-area: h3;
     text-align: left;
   }
@@ -164,6 +165,7 @@
     &__item,
     &__item.align-right {
       height: fit-content;
+      column-gap: 1rem;
       grid-template:
         'h3 h3 git-link' auto
         'descr descr descr' auto
@@ -180,16 +182,18 @@
     }
 
     &__img {
-      border-radius: none;
+      height: 100%;
+      border-radius: 0;
       mask-image: none;
 
       &-wrapper {
-        position: relative;
+        position: static;
         overflow: hidden;
         width: 100%;
+        height: 50%;
         border-radius: 0.8rem;
         margin: 1rem 0;
-        justify-self: center;
+        place-self: flex-start center;
       }
     }
   }
@@ -220,7 +224,7 @@
         'descr descr descr' auto
         'button button button' auto
         'read-more read-more read-more' auto
-        'img img img' auto / 1fr 1fr 1fr;
+        'img img img' 600px / 1fr 1fr 1fr;
       justify-items: center;
     }
 
@@ -233,7 +237,16 @@
     }
 
     &__img {
-      height: 50%;
+      height: 100%;
+    }
+
+    & .git-link {
+      padding: 0.2rem;
+
+      & .icon {
+        width: 2rem;
+        height: 2rem;
+      }
     }
 
     &__git-link_text {
