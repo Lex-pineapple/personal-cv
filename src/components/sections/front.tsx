@@ -4,6 +4,8 @@ import { TelegramIcon } from '@components/svg/telegram-icon';
 
 import './front.scss';
 
+import cvPdf from '/public/CV_AS.pdf';
+
 export function Front() {
   return (
     <div className="front" id="front">
@@ -13,7 +15,9 @@ export function Front() {
         </div>
         <div className="front_buttons_container">
           <button type="button" className="front__button button button_download">
-            CV в PDF
+            <a href={cvPdf} download="CV_ASonich">
+              CV в PDF
+            </a>
           </button>
           <a href="mailto:pineapplepear55@gmail.com" className="front__button button button_email">
             Напишите мне email
@@ -25,8 +29,8 @@ export function Front() {
         <p className="front__subtext">Junior Front-End разработчик</p>
         <p className="front__text text text_descr">
           Я Front-End разработчик из Минска, имею знания JavaScript, Typescript, CSS(SASS), React,
-          Node.js, Docker. Умею работать с базами данных PostgreSQL и MySQL, и ORM Prisma и TypeORM.
-          Всегда стараюсь ответственно подходить к поставленным задачам и доводить дело до конца.
+          Node.js, Docker. Умею работать с базами данных PostgreSQL и MySQL, а также с ORM Prisma и
+          TypeORM.
         </p>
         {/* <p className="front__text text text_additional">
           Looking for more laconic version of this site?

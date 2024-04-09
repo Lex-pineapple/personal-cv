@@ -105,6 +105,10 @@
     font-size: 0.8rem;
     grid-area: button;
 
+    & a {
+      color: #fff;
+    }
+
     &.button_email {
       border: 2px solid #fff;
       margin: 0.27rem auto;
@@ -230,13 +234,13 @@
     }
 
     &__img {
-      width: 20rem;
-      height: 20rem;
+      width: 17rem;
+      height: 17rem;
 
       &-wrapper {
         &::after {
-          width: 20rem;
-          height: 20rem;
+          width: 17rem;
+          height: 17rem;
         }
       }
     }
