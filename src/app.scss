@@ -24,6 +24,7 @@
 
   &_top {
     position: fixed;
+    z-index: 100;
     right: 0.5rem;
     bottom: 0.5rem;
     display: flex;

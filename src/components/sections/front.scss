@@ -266,14 +266,19 @@
       padding-top: 5rem;
     }
 
+    &__h1,
+    &__strong {
+      font-size: 2rem;
+    }
+
     &__img {
-      width: 80vw;
-      height: 80vw;
+      width: 75vw;
+      height: 75vw;
 
       &-wrapper {
         &::after {
-          width: 80vw;
-          height: 80vw;
+          width: 75vw;
+          height: 75vw;
         }
       }
     }
@@ -282,11 +287,6 @@
 
 @media only screen and (width <=400px) {
   .front {
-    &__h1,
-    &__strong {
-      font-size: 2rem;
-    }
-
     &__text.text_descr {
       font-size: 0.8rem;
     }
