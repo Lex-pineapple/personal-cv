@@ -1,6 +1,5 @@
 import Avatar from '@assets/avatar.jpg';
 import { GithubIcon } from '@components/svg/github-icon';
-import { LinkedinIcon } from '@components/svg/linkedin-icon';
 import { TelegramIcon } from '@components/svg/telegram-icon';
 
 import './front.scss';
